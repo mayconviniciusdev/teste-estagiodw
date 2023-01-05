@@ -5,10 +5,6 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.clear {
-  clear: both;
-}
-
 .container {
   width: 100%;
   max-width: 1280px;
@@ -27,31 +23,72 @@ header .logo img {
   height: 40px;
   margin-top: 20px;
 }
-header nav {
+header .menu {
   float: right;
 }
-header nav .opener {
-  display: none;
-  color: #919496;
-  font-size: 30px;
-  cursor: pointer;
-  margin-top: 25px;
-}
-header nav ul {
+header .menu ul {
   list-style-type: none;
 }
-header nav ul li {
+@media (max-width: 768px) {
+  header .menu ul {
+    display: none;
+  }
+}
+header .menu ul li {
   float: left;
   padding: 30px 15px;
   font-size: 16px;
   font-weight: 600;
   color: #F6F6F6;
 }
-header nav ul li a {
+header .menu ul li a {
   text-decoration: none;
   color: #F6F6F6;
 }
-header nav ul li a:hover {
+header .menu ul li a:hover {
+  color: #1DB954;
+}
+header .menuMobile {
+  top: 25px;
+  right: 0;
+  position: absolute;
+  z-index: 999;
+}
+header .menuMobile #menuOpener {
+  display: none;
+  color: #F6F6F6;
+  font-size: 30px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header .menuMobile #menuOpener {
+    display: block;
+    margin-right: 20px;
+    text-align: right;
+  }
+}
+header .menuMobile #menuContent {
+  width: 0;
+  background: #000;
+  text-align: right;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all ease 0.5s;
+}
+header .menuMobile #menuContent ul {
+  padding: 30px;
+}
+header .menuMobile #menuContent ul li {
+  padding: 30px;
+  list-style-type: none;
+  cursor: pointer;
+}
+header .menuMobile #menuContent ul li a {
+  text-decoration: none;
+  color: #F6F6F6;
+  font-weight: bold;
+}
+header .menuMobile #menuContent ul li a:hover {
   color: #1DB954;
 }
 

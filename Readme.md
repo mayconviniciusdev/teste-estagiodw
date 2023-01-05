@@ -1,6 +1,6 @@
 # Teste para vaga de Estagiário Desenvolvedor Web.
 - Nesse repositório mostrarei que possuo experiencia e capacidade de resolução sobre problemas ou dúvidas que são exibidas no dia-a-dia de um estagiário em desenvolvimento web. O mesmo é apenas meu retorno referente ao teste de emprego disponível para alunos, dentro da plataforma da B7WEB e sua ideia é recriar a página de captura do Spotify.
-- Além da criação do projeto solicitado, desenvolvi o footer da página que não constava no mesmo, juntamente com efeitos hover que não eram obrigatórios. As tecnologias usadas foram HTML para marcação da página, CSS/SCSS para criação de estilo. 
+- Além da criação do projeto solicitado, desenvolvi o footer da página que não constava no mesmo, juntamente com efeitos hover que não eram obrigatórios. As tecnologias usadas foram HTML para marcação da página, CSS/SCSS para criação de estilo e Javascript para evento de clique no menu. 
 
 ### Resoluções das questões teóricas.
 1. Qual a função do "head" no HTML?<br>
