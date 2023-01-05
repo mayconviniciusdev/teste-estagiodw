@@ -51,6 +51,9 @@ header nav ul li a {
   text-decoration: none;
   color: #F6F6F6;
 }
+header nav ul li a:hover {
+  color: #1DB954;
+}
 
 .partOne {
   background-color: #B35AA1;
@@ -87,8 +90,11 @@ header nav ul li a {
   text-decoration: none;
   color: #F6F6F6;
   font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.partOne .content .text button a:hover {
+  color: #1DB954;
 }
 .partOne .content .text span {
   display: block;
@@ -133,8 +139,11 @@ header nav ul li a {
   text-decoration: none;
   color: #5115ED;
   font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.partTwo .text button a:hover {
+  color: #F6F6F6;
 }
 
 footer {
