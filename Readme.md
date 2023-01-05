@@ -1,0 +1,2 @@
+# Teste para vaga de Estagiário Desenvolvedor Web.
+- Nesse repositório mostrarei que possuo experiencia e capacidade de resolução sobre problemas ou dúvidas que são exibidas no dia-a-dia de um estagiário em desenvolvimento web. O mesmo é apenas meu retorno referente ao teste de emprego disponível para alunos, dentro da plataforma da B7WEB e sua ideia é criar a página de captura do Spotify.
