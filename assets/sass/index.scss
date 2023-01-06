@@ -69,27 +69,38 @@ background-color: #000;
 .partOne 
 {background-color: #B35AA1;
 padding: 150px 0;
+@media (max-width: 1080px) {padding: 80px 0;}
     h4 
     {font-size: 12px;
     font-weight: 700;
     color: #F6F6F6;}
+
     .content 
     {display: flex;
     align-items: center;
+    @media (max-width: 1080px) {display: block;}
         .text {color: #F6F6F6;
 
         h1 
         {padding: 30px 0;
-        padding-right: 10px;
-        font-size: 50px;}
+        width: 600px;
+        font-size: 50px;
+        @media (max-width: 1080px) {font-size: 20px; padding-right: 0;}
+        @media (max-width: 768px) {width: 300px;}}
 
         p
         {font-size: 18px;
-        line-height: 25px;}
+        line-height: 25px;
+        width: 450px;
+        @media (max-width: 1080px) 
+            {font-size: 14px; 
+            padding-right: 0; 
+            width: 330px;}}
 
         button 
         {background-color: #000;
         padding: 15px;
+        border: 0;
         border-radius: 30px;
         margin: 20px 0;
             a
@@ -100,12 +111,17 @@ padding: 150px 0;
             line-height: 12px;
             &:hover {color: #1DB954;}}}
 
-        span 
-        {display: block;
-        font-size: 10px;}
+            span 
+            {display: block;
+            font-size: 12px;
+            width: 600px;
+            @media (max-width: 1080px) {width: 350px;}}
         }
 
-        img {height: 400px;}}
+        img {height: 400px;
+        @media (max-width: 1080px) {height: 350px; margin-top: 30px;}
+        @media (max-width: 768px) {display: none;}}
+    }
 }
 
 .partTwo
@@ -114,16 +130,21 @@ background-color: #5115ED;
 background-repeat: no-repeat;
 background-size: 100%;
 padding: 150px 0;
+@media (max-width: 1420px) {background-image: none;;}
     h4 
     {font-size: 12px;
     font-weight: 700;
-    color: #1DB954;}
+    color: #1DB954;
+    @media (max-width: 1420px) {text-align: right;}}
+
     .text
     {color: #1DB954;
+    @media (max-width: 1420px) {text-align: right;}
         h1 
         {padding-top: 30px;
         font-size: 55px;
-        padding-bottom: 30px;}
+        padding-bottom: 30px;
+        @media (max-width: 1420px) {font-size: 40px;}}
 
         p
         {font-size: 18px;
@@ -141,27 +162,30 @@ padding: 150px 0;
             font-weight: bold;
             font-size: 12px;
             line-height: 12px;
-                &:hover {color: #F6F6F6;}}
-        }
+            &:hover {color: #F6F6F6;}}}
     }
 }
 
 footer 
 {background-color: #000;
+padding: 50px 0;
     .footer 
     {display: flex;
     justify-content: space-around;
-    padding: 100px 0;
+    @media (max-width: 1140px) {display: block;}
         img 
         {height: 40px;
-        padding: 0 20px;}
+        padding: 0 20px;
+        @media (max-width: 1140px) {padding: 0; margin: 10px 0;}}
 
         div 
         {padding: 0 20px;
         font-weight: bold;
+        @media (max-width: 1140px) {padding: 20px 0;};
             p 
             {padding: 15px;
-                &:first-child {color: #919496}
+            @media (max-width: 1140px) {padding: 10px 0};
+            &:first-child {color: #919496};
 
                 a
                 {text-decoration: none;
@@ -181,6 +205,7 @@ footer
             background-color: #222326;
             border-radius: 50%;
             cursor: pointer;
+            @media (max-width: 1140px) {padding: 15px;};
                 &:hover {color: #1DB954}
             }
         }
@@ -191,23 +216,29 @@ footer
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+    @media (max-width: 1140px) {display: block;}
         a 
         {color: #919496;
         text-decoration: none;
-            &:hover {color: #1DB954};
-        }
+        &:hover {color: #1DB954};}
 
         .textOne
         {display: inline-flex;
-            p {padding: 0px 15px;}
+        @media (max-width: 1140px) {display: block;}
+            p 
+            {padding: 0px 15px;
+            @media (max-width: 1140px) {padding: 0}}
         }
 
         .textTwo 
         {text-align: end;
         padding: 15px;
+        @media (max-width: 1140px) 
+            {text-align: left; 
+            padding: 15px 0;}
+
             p 
             {line-height: 20px;
-            color: #919496;}
-        }
+            color: #919496;}}
     }
 }
