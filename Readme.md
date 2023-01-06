@@ -34,3 +34,8 @@
 #
 10. Quais os diferentes tipos de seletores CSS?<br>
 `Respota:` Há seletores de elementos, classes, id, pseudo-classes e pseudo-elementos e combinadores.
+#
+### Imagens do projeto finalizado.
+<img src="./assets/image/tela01.png">
+<img src="./assets/image/tela02.png">
+<img src="./assets/image/tela03.png">
