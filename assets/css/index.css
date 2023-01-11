@@ -16,58 +16,56 @@ header {
   height: 80px;
   background-color: #000;
 }
-header .logo {
-  float: left;
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
-header .logo img {
+header .container .logo img {
   height: 40px;
   margin-top: 20px;
 }
-header .menu {
-  float: right;
-}
-header .menu ul {
+header .container .menu ul {
   list-style-type: none;
+  display: flex;
 }
 @media (max-width: 768px) {
-  header .menu ul {
+  header .container .menu ul {
     display: none;
   }
 }
-header .menu ul li {
-  float: left;
+header .container .menu ul li {
   padding: 30px 15px;
   font-size: 16px;
   font-weight: 600;
   color: #F6F6F6;
 }
-header .menu ul li a {
+header .container .menu ul li a {
   text-decoration: none;
   color: #F6F6F6;
 }
-header .menu ul li a:hover {
+header .container .menu ul li a:hover {
   color: #1DB954;
 }
-header .menuMobile {
+header .container .menuMobile {
   top: 25px;
   right: 0;
   position: absolute;
   z-index: 999;
 }
-header .menuMobile #menuOpener {
+header .container .menuMobile #menuOpener {
   display: none;
   color: #F6F6F6;
   font-size: 30px;
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  header .menuMobile #menuOpener {
+  header .container .menuMobile #menuOpener {
     display: block;
     margin-right: 20px;
     text-align: right;
   }
 }
-header .menuMobile #menuContent {
+header .container .menuMobile #menuContent {
   width: 0;
   height: 100vh;
   background: #000;
@@ -76,120 +74,119 @@ header .menuMobile #menuContent {
   overflow-y: auto;
   transition: all ease 0.5s;
 }
-header .menuMobile #menuContent ul {
+header .container .menuMobile #menuContent ul {
   padding: 30px;
 }
-header .menuMobile #menuContent ul li {
+header .container .menuMobile #menuContent ul li {
   padding: 30px;
   list-style-type: none;
   cursor: pointer;
 }
-header .menuMobile #menuContent ul li a {
+header .container .menuMobile #menuContent ul li a {
   text-decoration: none;
   color: #F6F6F6;
   font-weight: bold;
 }
-header .menuMobile #menuContent ul li a:hover {
+header .container .menuMobile #menuContent ul li a:hover {
   color: #1DB954;
 }
 
-.partOne {
+.spotifyPremium {
   background-color: #B35AA1;
   padding: 150px 0;
 }
 @media (max-width: 1080px) {
-  .partOne {
+  .spotifyPremium {
     padding: 80px 0;
   }
 }
-.partOne h4 {
+.spotifyPremium h4 {
   font-size: 12px;
   font-weight: 700;
   color: #F6F6F6;
 }
-.partOne .content {
+.spotifyPremium .content {
   display: flex;
   align-items: center;
 }
 @media (max-width: 1080px) {
-  .partOne .content {
+  .spotifyPremium .content {
     display: block;
   }
 }
-.partOne .content .text {
+.spotifyPremium .content .text {
   color: #F6F6F6;
 }
-.partOne .content .text h1 {
+.spotifyPremium .content .text h1 {
   padding: 30px 0;
   width: 600px;
   font-size: 50px;
 }
 @media (max-width: 1080px) {
-  .partOne .content .text h1 {
+  .spotifyPremium .content .text h1 {
     font-size: 20px;
     padding-right: 0;
   }
 }
 @media (max-width: 768px) {
-  .partOne .content .text h1 {
+  .spotifyPremium .content .text h1 {
     width: 300px;
   }
 }
-.partOne .content .text p {
+.spotifyPremium .content .text p {
   font-size: 18px;
   line-height: 25px;
   width: 450px;
+  padding-bottom: 30px;
 }
 @media (max-width: 1080px) {
-  .partOne .content .text p {
+  .spotifyPremium .content .text p {
     font-size: 14px;
     padding-right: 0;
     width: 330px;
   }
 }
-.partOne .content .text button {
-  background-color: #000;
-  padding: 15px;
-  border: 0;
-  border-radius: 30px;
-  margin: 20px 0;
-}
-.partOne .content .text button a {
+.spotifyPremium .content .text a {
   text-decoration: none;
   color: #F6F6F6;
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
+  background-color: #000;
+  padding: 15px;
+  border: 0;
+  border-radius: 30px;
 }
-.partOne .content .text button a:hover {
+.spotifyPremium .content .text a:hover {
   color: #1DB954;
 }
-.partOne .content .text span {
+.spotifyPremium .content span {
   display: block;
   font-size: 12px;
   width: 600px;
+  padding-top: 30px;
 }
 @media (max-width: 1080px) {
-  .partOne .content .text span {
+  .spotifyPremium .content span {
     width: 350px;
   }
 }
-.partOne .content img {
+.spotifyPremium .content img {
   height: 400px;
 }
 @media (max-width: 1080px) {
-  .partOne .content img {
+  .spotifyPremium .content img {
     height: 350px;
     margin-top: 30px;
   }
 }
 @media (max-width: 768px) {
-  .partOne .content img {
+  .spotifyPremium .content img {
     display: none;
   }
 }
 
-.partTwo {
+.spotifyFree {
   background-image: url("../image/background.png");
   background-color: #5115ED;
   background-repeat: no-repeat;
@@ -197,58 +194,62 @@ header .menuMobile #menuContent ul li a:hover {
   padding: 150px 0;
 }
 @media (max-width: 1420px) {
-  .partTwo {
+  .spotifyFree {
     background-image: none;
   }
 }
-.partTwo h4 {
+.spotifyFree h4 {
   font-size: 12px;
   font-weight: 700;
   color: #1DB954;
 }
 @media (max-width: 1420px) {
-  .partTwo h4 {
+  .spotifyFree h4 {
     text-align: right;
   }
 }
-.partTwo .text {
+.spotifyFree .text {
   color: #1DB954;
 }
 @media (max-width: 1420px) {
-  .partTwo .text {
+  .spotifyFree .text {
     text-align: right;
   }
 }
-.partTwo .text h1 {
+.spotifyFree .text h1 {
   padding-top: 30px;
   font-size: 55px;
   padding-bottom: 30px;
 }
 @media (max-width: 1420px) {
-  .partTwo .text h1 {
+  .spotifyFree .text h1 {
     font-size: 40px;
   }
 }
-.partTwo .text p {
+.spotifyFree .text p {
   font-size: 18px;
   line-height: 25px;
 }
-.partTwo .text button {
+.spotifyFree .text p:last-child {
+  padding-bottom: 30px;
+}
+.spotifyFree .text a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: #F6F6F6;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
   background-color: #1DB954;
   padding: 15px;
   border: 0;
   border-radius: 30px;
-  margin: 30px 0;
 }
-.partTwo .text button a {
-  text-decoration: none;
+.spotifyFree .text a:hover {
   color: #5115ED;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-}
-.partTwo .text button a:hover {
-  color: #F6F6F6;
 }
 
 footer {

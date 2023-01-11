@@ -11,62 +11,67 @@ padding: 0 5%;}
 header 
 {height: 80px;
 background-color: #000;
-    .logo {float: left;
-    img {height: 40px; margin-top: 20px;}}
-    
-    .menu {float: right;
-    ul {list-style-type: none;
-        @media (max-width: 768px) {display: none} 
-            li
-            {float: left;
-            padding: 30px 15px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #F6F6F6;
-                a {text-decoration: none; color: #F6F6F6;
-                &:hover {color: #1DB954;}}}
-        }
-    }
-
-    .menuMobile 
-    {top: 25px;
-    right: 0;
-    position: absolute;
-    z-index: 999;
-        #menuOpener 
-        {display: none;
-        color: #F6F6F6;
-        font-size: 30px;
-        cursor: pointer;
-        @media (max-width: 768px) 
-            {display: block; 
-            margin-right: 20px;
-            text-align: right;}}
-
-        #menuContent
-        {width: 0;
-        height: 100vh;
-        background:#000;
-        text-align: right;
-        overflow-x:hidden;
-        overflow-y:auto;
-        transition: all ease .5s;
-            ul {padding: 30px;
-            li {padding: 30px;
-                list-style-type: none;
-                cursor:pointer;
-
-                a 
-                {text-decoration: none; 
+    .container 
+    {display: flex;
+    justify-content: space-between;
+        .logo {
+        img {height: 40px; margin-top: 20px;}}
+        
+        .menu {
+        ul 
+        {list-style-type: none;
+        display: flex;
+            @media (max-width: 768px) {display: none} 
+                li
+                {padding: 30px 15px;
+                font-size: 16px;
+                font-weight: 600;
                 color: #F6F6F6;
-                font-weight: bold;
-                &:hover {color: #1DB954;}}}
+                    a {text-decoration: none; color: #F6F6F6;
+                    &:hover {color: #1DB954;}}}
+            }
+        }
+
+        .menuMobile 
+        {top: 25px;
+        right: 0;
+        position: absolute;
+        z-index: 999;
+            #menuOpener 
+            {display: none;
+            color: #F6F6F6;
+            font-size: 30px;
+            cursor: pointer;
+            @media (max-width: 768px) 
+                {display: block; 
+                margin-right: 20px;
+                text-align: right;}}
+
+            #menuContent
+            {width: 0;
+            height: 100vh;
+            background:#000;
+            text-align: right;
+            overflow-x:hidden;
+            overflow-y:auto;
+            transition: all ease .5s;
+                ul {padding: 30px;
+                li {padding: 30px;
+                    list-style-type: none;
+                    cursor:pointer;
+
+                    a 
+                    {text-decoration: none; 
+                    color: #F6F6F6;
+                    font-weight: bold;
+                    &:hover {color: #1DB954;}}}
+                }   
             }   
         }
     } 
 }
 
-.partOne 
+.spotifyPremium 
 {background-color: #B35AA1;
 padding: 150px 0;
 @media (max-width: 1080px) {padding: 80px 0;}
@@ -92,31 +97,31 @@ padding: 150px 0;
         {font-size: 18px;
         line-height: 25px;
         width: 450px;
+        padding-bottom: 30px;
         @media (max-width: 1080px) 
             {font-size: 14px; 
             padding-right: 0; 
             width: 330px;}}
 
-        button 
-        {background-color: #000;
+        a
+        {text-decoration: none;
+        color: #F6F6F6;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        background-color: #000;
         padding: 15px;
         border: 0;
         border-radius: 30px;
-        margin: 20px 0;
-            a
-            {text-decoration: none;
-            color: #F6F6F6;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 12px;
-            &:hover {color: #1DB954;}}}
+        &:hover {color: #1DB954;}}}
 
-            span 
-            {display: block;
-            font-size: 12px;
-            width: 600px;
-            @media (max-width: 1080px) {width: 350px;}}
-        }
+        span 
+        {display: block;
+        font-size: 12px;
+        width: 600px;
+        padding-top: 30px;
+        @media (max-width: 1080px) {width: 350px;}}
+        
 
         img {height: 400px;
         @media (max-width: 1080px) {height: 350px; margin-top: 30px;}
@@ -124,7 +129,7 @@ padding: 150px 0;
     }
 }
 
-.partTwo
+.spotifyFree
 {background-image: url('../image/background.png');
 background-color: #5115ED;
 background-repeat: no-repeat;
@@ -148,21 +153,24 @@ padding: 150px 0;
 
         p
         {font-size: 18px;
-        line-height: 25px;}
+        line-height: 25px;
+        &:last-child {padding-bottom: 30px;}}
 
-        button 
-        {background-color: #1DB954;
+        a
+        {text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        text-decoration: none;
+        color: #F6F6F6;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        background-color: #1DB954;
         padding: 15px;
         border: 0;
         border-radius: 30px;
-        margin: 30px 0;
-            a
-            {text-decoration: none;
-            color: #5115ED;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 12px;
-            &:hover {color: #F6F6F6;}}}
+        &:hover {color: #5115ED;}}
     }
 }
 
