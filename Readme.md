@@ -30,11 +30,11 @@
 #
 6. O uso de media query é obrigatório em todas as páginas?<br>
 `Resposta:` Se o site possuir mais de uma versão de telas, é obrigatório sim.<br>
-`Resposta corrigida:` Não necessariamente, já que é possível tornar um site com funções como `clamp`, `min`, `max`, `minmax` e `css grid`. Mas não é o ideal.  
+`Resposta corrigida:` É possível tornar um site responsivo somente com `clamp`, `min`, `max`, `minmax` e `css grid`. Mas será preciso usar media query caso o projeto exigir.
 #
 7. Qual a diferença entre CSS Inline e CSS em um arquivo?<br>
 `Resposta:` Sua diferença é apenas o local onde se está inserindo o CSS. Um está sendo aplicado na linha de algum elemento no arquivo .html, outro tem arquivo próprio para seu uso.<br>
-`Resposta corrigida:` Sua diferença é apenas o local onde se está inserindo o CSS. Um está sendo aplicado no atributo style de uma tag no arquivo .html, outro tem arquivo próprio para seu uso.
+`Resposta corrigida:` Sua diferença é apenas o local onde se está inserindo o CSS. Um está sendo aplicado no atributo style de uma tag no HTML, o outro tem arquivo próprio para seu uso e é adicionado no HTML por meio da tag link.
 #
 8. Como criar animações no CSS? Dê um exemplo.<br>
 `Resposta:` É possível criar animações com frames.<br>
